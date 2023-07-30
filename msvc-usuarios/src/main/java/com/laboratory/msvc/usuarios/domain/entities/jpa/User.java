@@ -1,4 +1,4 @@
-package com.laboratory.msvc.usuarios.models.entity;
+package com.laboratory.msvc.usuarios.domain.entities.jpa;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,18 +6,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="usuarios")
+@Table(name="users")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Usuario {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre;
 
-    @Column(unique = true)
+    private String name;
+
     private  String email;
 
     private String password;
