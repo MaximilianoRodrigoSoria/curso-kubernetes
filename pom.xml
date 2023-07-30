@@ -21,7 +21,8 @@
     </properties>
 
     <modules>
-        <module>msvc-usuarios</module>
+        <module>msvc-users</module>
+        <module>msvc-courses</module>
     </modules>
 
 </project>
